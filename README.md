@@ -29,7 +29,6 @@ GitHub: [Restaurant Dicoding Project](https://github.com/herisandiyadi/restauran
 ├── Model
 ├── View
 ├── ViewModel
-├── Resources
 └── Assets
 ```
 
