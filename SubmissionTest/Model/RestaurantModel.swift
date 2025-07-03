@@ -6,7 +6,6 @@
 //
 import Foundation
 
-// MARK: - Main Response
 struct RestaurantResponse: Codable {
     let error: Bool
     let message: String
@@ -14,8 +13,7 @@ struct RestaurantResponse: Codable {
     let restaurants: [Restaurant]
 }
 
-// MARK: - Restaurant Model
-struct Restaurant: Codable, Identifiable {
+struct Restaurant: Codable, Identifiable, Hashable {
     let id: String
     let name: String
     let description: String

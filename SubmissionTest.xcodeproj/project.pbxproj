@@ -29,9 +29,22 @@
 		B702551B2E152218003DBA26 /* SubmissionTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubmissionTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B79E27C02E1693EA000E4DC1 /* Exceptions for "SubmissionTest" folder in "SubmissionTest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B70255002E152216003DBA26 /* SubmissionTest */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B70255032E152216003DBA26 /* SubmissionTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B79E27C02E1693EA000E4DC1 /* Exceptions for "SubmissionTest" folder in "SubmissionTest" target */,
+			);
 			path = SubmissionTest;
 			sourceTree = "<group>";
 		};

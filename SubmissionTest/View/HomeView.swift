@@ -8,9 +8,35 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var navToProfile: Bool? = nil
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack(spacing: 0) {
+               
+                HStack {
+                    Text("**Dicoding** Restaurant")
+                        .font(.system(size: 24))
+                    
+                    Spacer()
+                    
+                    Image(systemName: "person.fill")
+                        .imageScale(.large)
+                        .frame(height: 100).onTapGesture {
+                            navToProfile = true
+                        } .navigationDestination(item: $navToProfile){
+                            data in ProfileView()
+                        }
+                }
+                .padding(16)
+                
+                Divider() 
+                
+                RestaurantListView()
+            }
+        }
     }
+    
 }
 
 #Preview {
